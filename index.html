@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Солнышко</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    body {
+        width:100%;
+        padding: 4px;
+        font-family: Arial;
+    }
+
+    .header {
+        height: 200px;
+        text-align: center;
+        padding: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    .show{
+        width: 100%;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.795);
+        height: 100%;
+    }
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+    .overBlock {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.99);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overBlock-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div id="myNav" class="overBlock">
+
+        <!-- Overlay content -->
+        <div class="overBlock-content">
+          <label for="password"><span style="color: white;">Введи пароль</span></label>
+          <input id="psw" type="date">
+          <button id="answer" style="border: none; margin-top: 20px">Подсказка</button>
+        </div>
+      
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>Я и мое счастье</h1>
+        <p>Это я сделал для тебя солнышко мое, <span style="color: rgb(255, 146, 146);">я тебя любблю</span>. Наведи на фотки!!!!</p>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+        <div class="container">
+            <img src="./img/photo_2020-10-18_23-52-44.jpg" style="width:100%">
+            <div class="overlay">Едут счастливые😍</div>
+        </div>
+        <div class="container">
+            <img src="./img/photo_2020-10-18_23-53-49.jpg" style="width:100%">
+            <div class="overlay">Ууу, масочки😊</div>
+        </div>
+        <div class="container">
+            <img src="./img/oni86r2E8VU.jpg" style="width:100%">
+            <div class="overlay">Такие взрослые👻</div>
+        </div>
+        <div class="container">
+            <img src="./img/pgYXb5uyVvM.jpg" style="width:100%">
+            <div class="overlay">Такая серьезная милледи😚</div>
+        </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <img src="./img/e87eY41BGaA.jpg" style="width:100%">
+                <div class="overlay">Стырила мою шапку😒</div>
+            </div>
+            <div class="container">
+                <img src="./img/fy3xYEyPTps.jpg" style="width:100%">
+                <div class="overlay">Наш романтик в театре💏</div>
+            </div>
+            <div class="container">
+                <img src="./img/JLMn1XBjMTI.jpg" style="width:100%">
+                <div class="overlay">Дай буську😘</div>
+            </div>
+            <div class="container">
+                <img src="./img/photo_2020-10-18_23-54-49.jpg" style="width:100%">
+                <div class="overlay">И снова мы в масочках👽</div>
+            </div>      
+        </div>
+        <div class="column">
+            <div class="container">
+                <img src="./img/Blf0VOheGOs.jpg" style="width:100%">
+                <div class="overlay">Ты всегда такая милашка🥺</div>
+            </div>
+            <div class="container">
+                <img src="./img/TctihDqNz78.jpg" style="width:100%">
+                <div class="overlay">Ну мы и солнышки конечно☀️</div>
+            </div>
+            <div class="container">
+                <img src="./img/uIG3NWyJ5Nc.jpg" style="width:100%">
+                <div class="overlay">Сто процентов обо мне думаешь🤩</div>
+            </div>
+            <div class="container">
+                <img src="./img/V6Rf2Oc5gkM.jpg" style="width:100%">
+                <div class="overlay">Кривляшка🥴</div>
+            </div>        
+        </div>
+        <div class="column">
+            <div class="container">
+                <img src="./img/ZSLKVzsY14E.jpg" style="width:100%">
+                <div class="overlay">Просто эстетика 100%😎</div>
+            </div>
+            <div class="container">
+                <img src="./img/photo_2021-04-30_14-02-22.jpg" style="width:100%">
+                <div class="overlay">Ты моя королева👸</div>
+            </div>
+            <div class="container">
+                <img src="./img/photo_2021-05-02_11-05-50.jpg" style="width:100%">
+                <div class="overlay">Дай собой надышаться(никада не могу)😔</div>
+            </div>
+            <div class="container">
+                <img src="./img/photo_2021-05-27_21-22-20.jpg" style="width:100%">
+                <div class="overlay">Лесные зайки👫</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script defer>
+    document.getElementById('answer').onclick = () =>{
+        alert('Когда мы начали встречаться?');
+    }
+    document.getElementById('psw').addEventListener('change', (e) => {
+        let psw = e.target.value;
+        if(psw == '2020-05-27'){
+            document.getElementById('myNav').style.width = '0';
+        }
+    })
+</script>
