@@ -1,0 +1,155 @@
+body{
+    margin: 0%;
+    overflow: hidden;   
+    width: 100%;
+    height: 100%;
+    
+}
+div.container{
+    background: url('../img/sky.png');
+    background-size: 100% 80%;
+    position: relative;
+    display: inline-flex;
+}
+main img.road{
+    width: 100%;
+}
+main#block_road{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    margin-top: 0;
+}
+main#forCity{
+    /* position: rela; */
+    width: 100%;
+    margin-top: 0;
+}
+img.city{
+    width: 100%;
+   
+}
+main#person{
+    position: absolute;
+}
+div.bull{
+    position: absolute;
+    width: 100%;
+}
+img.ImgPerson{
+    width: 100px;
+}
+.boxLoad{
+    height: 10px;
+}
+.zomb{
+    position: relative;
+    /* border: 2px solid black; */
+}
+.forZombe{
+    position: absolute;
+    /* display: block; */
+    
+}
+.value {
+    width: 100%;
+	height: 10px;
+    background: #ddd;
+}
+.value-box {
+    height: 10px;
+	background: #36c36e;
+}
+#bigCar{
+    position: absolute;
+    width: 11%;
+    z-index: 0;
+}
+.backCarImg{
+    width: 100%;
+}
+
+.fenceToo{
+    position: absolute;
+    width: 20%;
+}
+.blocks{
+    background-color: rgba(27, 77, 104, 0.6) ; 
+    /*  */
+    height: 200px;
+    width: 300px;
+    font-size: 50px;
+    position: absolute;
+}
+.noZombe{
+    opacity: .3;
+}
+.imgZom{
+    position: absolute;
+}
+.personsHelth{
+    opacity: .3;
+}
+.blockScore{
+    width: 100%;
+    position: absolute;
+}
+.textScore{
+    position: absolute;
+}
+#score{
+    left: 140px;
+}
+div.poleForClose{
+    background-color: rgb(15, 12, 12, 0.3);
+    background-size: 100%;
+    
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+div.closeWindow{
+    background: linear-gradient(to top left, rgb(80, 5, 5), rgb(118, 184, 170),#424268) ;
+    border: 1px solid blanchedalmond;
+    border-radius: 20px;
+    width: 28%;
+    height: 28%;
+    left: 40%;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    color:brown;
+    font-size: 50px;
+    
+}
+.newGame{
+    width: 100%;
+}
+.newContainer{
+    border: 5px solid royalblue;
+    display: inline-block;
+    position: absolute;
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+.load{
+    background: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.poleForLoad{
+    margin-left: 35%;
+    margin-top: 25%;
+    width: 20%;
+	height: 30px;
+    background: #ddd;
+}
+.poleForLoad-box{
+    height: 30px;
+	background: #d32f2f;
+}

@@ -1,0 +1,113 @@
+#word{
+    text-align: center;
+}
+body{
+    width: 100%;
+    margin: 0;    
+    overflow-x: hidden;   
+}
+div.letters{
+    border: 2px solid black;
+}
+div#view{
+    display: block;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+div.image{
+    margin-top:-100px;
+    text-align: center;
+   
+    
+}
+div.poleForCose{
+    background: url('../img/gif.gif') no-repeat;
+    background-size: 100%;
+    opacity: 0.70;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+div.closeWindow{
+    background: linear-gradient(to bottom left, rgb(49, 199, 219), pink,#5555fa) ;
+    border: 1px solid blanchedalmond;
+    border-radius: 20px;
+    width: 28%;
+    height: 28%;
+    position: absolute;
+    display: inline-block;
+    left: 35%;
+    top: 35%;       
+}
+div.clon{
+    display: flex;
+}
+p{
+    margin-bottom: 0;
+    color: black ;
+    margin-left: 18%;
+    padding-bottom:5px; 
+}
+input{
+    margin-left: 18%;
+    width:40%;
+    border: none;
+    border-bottom: 2px solid #08223f;
+    border-left: 2px solid #08223f; 
+}
+textarea#valueAbout{
+    width: 60%;
+    height: 50px;
+    margin-left: 18%;
+    border: none;
+    border-bottom: 2px solid #08223f;
+    border-left: 2px solid #08223f; 
+}
+button#buttonStart{
+    display:block;
+    margin: auto;
+    width: 30%;
+    height: 15%;
+    font-size: 150%;
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 3px -3px rgb(53,167,110) inset;
+    transition: 0.4s;
+}
+button#buttonStart:hover{
+    background: rgb(53,167,110);
+    color: aqua;
+}
+button#buttonStart :active {
+    box-shadow: 0 -3px rgb(20, 75, 47) inset;
+}
+div#word{
+    font-size: 150%;
+}
+h2#about{
+    margin:auto;
+    width: 40%;
+    background:#36be00;
+    color:white;
+    text-align: center;
+}
+div.messeges{
+    text-align: center;
+    color: red;
+}
+div#word{
+    font-size: 100px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+main.areaInput{
+    padding-top: 15px;
+    width: 20%;
+    margin: auto;
+    padding-left: 2%;
+}

@@ -1,0 +1,42 @@
+div#board{    
+    position: relative;
+   right: 50px;
+    
+}
+table{
+    position: absolute;
+    border: 2px solid wheat;
+height: 533px;
+width: 578px;
+margin-left: 35%;
+margin-top: 25px;
+border-spacing: 0;
+}
+td{
+    border: 1px solid wheat;
+    
+}
+div#messageArea{
+    position: absolute;
+    top:0;
+    left: 40px;
+    color: darkgoldenrod;
+    font-size: 50px;  
+}
+
+form{
+    position: absolute;
+    top:590px;
+    right: 0;
+    padding: 15px;
+    background-color: azure;
+}
+form input{
+    background-color: rgb(185, 194, 246);
+    border-color: rgb(87, 61, 61);
+    font-size: 1em;
+}
+input#fireButton{
+    width: 40px;
+    color: rgb(3, 46, 3);
+}
